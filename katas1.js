@@ -34,15 +34,12 @@ stringElement("arthur", 4);
 
 
 
-
-
-
 function stringSlicer(string, number){
     for (let i = 0; i < number; i++){
         console.log(string[i])
     }
 }
-stringSlicer("AlgumaFraseAleatória", 9)
+stringSlicer("Algorítmos", 4)
 
 
 
@@ -51,15 +48,15 @@ stringSlicer("AlgumaFraseAleatória", 9)
 function stringRest(string, number){
     let novaString = ""
     for (let i = 0; i < string.length; i++){
-        if([i] > number){
+        if(i >= number){
         novaString += string[i]
         }
     }
-    console.log(novaString)
+    return novaString
 } 
 let palavra = prompt("Escolha uma palavra")
 let numero = parseInt(prompt("Escolha um número"))
-stringRest(palavra, numero)
+console.log(stringRest(palavra, numero));
 
 
 
